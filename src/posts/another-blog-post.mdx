@@ -1,0 +1,30 @@
+---
+date: 2021-08-12
+title: Dawgy Dog!
+description: This is even better dawg.
+---
+
+import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
+export const query = graphql`
+  query anotherQuery {
+    file(name: { eq: "smashburger" }) {
+      childrenImageSharp {
+        gatsbyImageData(placeholder: DOMINANT_COLOR)
+      }
+    }
+  }
+`;
+
+# Oh Dawg
+
+## Doggie Dawg
+
+### No love
+
+#### One more time
+
+This is even better than the last one.
+
+<GatsbyImage image={getImage(props.data.file)} alt="smashburger" />
